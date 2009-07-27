@@ -30,7 +30,7 @@ function insertFeedMessage($output) {
 		$message = str_replace("[sitename]", '<a href="'.get_bloginfo('home').'">'.get_bloginfo('name').'</a>', $message);
 		
 		// postdate
-		$message = str_replace("[postdate]", the_date(null, null, null, false) . get_the_time(get_option('date_format')), $message);
+		$message = str_replace("[postdate]", get_the_time(get_option('date_format')), $message);
 		
 	}
 	
