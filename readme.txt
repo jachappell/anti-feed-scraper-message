@@ -3,7 +3,7 @@ Contributors: Joen
 Tags: rss, xml, feed, atom, rss2, scrape, anti, prevention, spam
 Requires at least: 2.6
 Tested up to: 2.8.2
-Stable tag: 0.9
+Stable tag: 0.9.1
 
 == Description ==
 
@@ -27,4 +27,5 @@ When the plugin is activated, a default message is shown. This message can then 
 
 == Changelog ==
 
+* 0.9.1: Fixed a problem with the date formatting. Now it shows the format picked in your Wordpress backend under "General Settings". 
 * 0.9: First release.
