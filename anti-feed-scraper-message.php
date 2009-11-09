@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Anti Feed-Scraper Message
-Version: 0.9.1
+Version: 0.9.2
 Description: Helps prevent your RSS feed from being "scraped" (copied and reposted elsewhere), by adding a customizable message with a link to your original post.
 Author: Joen
 Author URI: http://noscope.com/
@@ -31,7 +31,11 @@ function insertFeedMessage($output) {
 		
 		// postdate
 		$message = str_replace("[postdate]", get_the_time(get_option('date_format')), $message);
-		
+
+		// tweetthis
+		$tweetthis = '<a href="http://twitter.com/home/?status=' . get_the_title() . ': '. get_bloginfo('url') . '/?p=' . get_the_ID() . '">Tweet This</a>';
+		$message = str_replace("[tweetthis]", $tweetthis, $message);
+
 	}
 	
 
@@ -115,7 +119,7 @@ function afs_options_page() {
 					
 					<p class="setting-description"><?php _e("Enter the message that will be shown after every post on your blog, but only in your feed. <strong>Remember</strong>, everybody can see this message, not only the 'scrape bots'."); ?>
 					</p>
-					<p class="setting-description"><?php _e("You can use these tags in your message: <code>[postname]</code>, <code>[sitename]</code>, <code>[postdate]</code>. They will be replaced with their counterparts. You can also use HTML, but remember to use inline CSS styles.", 'afs') ?></p>
+					<p class="setting-description"><?php _e("You can use these tags in your message: <code>[postname]</code>, <code>[sitename]</code>, <code>[postdate]</code>, <code>[tweetthis]</code>. They will be replaced with their counterparts. You can also use HTML, but remember to use inline CSS styles.", 'afs') ?></p>
 
 
 		
