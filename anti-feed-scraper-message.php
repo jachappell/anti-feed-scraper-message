@@ -5,7 +5,7 @@ Version: 0.9.2
 Description: Helps prevent your RSS feed from being "scraped" (copied and reposted elsewhere), by adding a customizable message with a link to your original post.
 Author: Joen
 Author URI: http://noscope.com/
-Plugin URI: http://noscope.com/
+Plugin URI: http://noscope.com/?p=4721
 */
 
 
