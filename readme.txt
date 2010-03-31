@@ -15,7 +15,7 @@ When the plugin is activated, a default message is shown. This message can then 
 
 [postname], [sitename] and [postdate] are automatically replaced by the plugin.
 
-Also available: [tweetthis], which adds a tiny link to allow readers to tweet a link to your post in the format of `http://www.yoursite.com/?p=<postID>`.
+Also available: [tweetthis], which adds a tiny link to allow readers to tweet a link to your post in the format of `http://www.yoursite.com/?p=[postID]`.
 
 == Installation ==
 
