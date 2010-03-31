@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Anti Feed-Scraper Message
-Version: 0.9.2
+Version: 0.9.3
 Description: Helps prevent your RSS feed from being "scraped" (copied and reposted elsewhere), by adding a customizable message with a link to your original post.
 Author: Joen
 Author URI: http://noscope.com/
@@ -48,7 +48,7 @@ function insertFeedMessage($output) {
 }
 
 // Register functions
-add_filter('the_content', 'insertFeedMessage');
+add_filter('the_content_feed', 'insertFeedMessage');
 
 
 
