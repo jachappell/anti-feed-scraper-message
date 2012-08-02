@@ -2,7 +2,7 @@
 /*
 Plugin Name: Anti Feed-Scraper Message
 Version: 0.9.3
-Description: Helps prevent your RSS feed from being "scraped" (copied and reposted elsewhere), by adding a customizable message with a link to your original post.
+Description: Helps discourage your RSS feed from being "scraped" by automatically adding a customizable link at the bottom of all your posts, in the RSS feed.
 Author: Joen
 Author URI: http://noscope.com/
 Plugin URI: http://noscope.com/?p=4721

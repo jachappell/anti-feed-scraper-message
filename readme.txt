@@ -2,20 +2,16 @@
 Contributors: Joen
 Tags: rss, xml, feed, atom, rss2, scrape, anti, prevention, spam
 Requires at least: 2.6
-Tested up to: 2.9.2
+Tested up to: 3.4.1
 Stable tag: trunk
+
+Discourage robots from scraping your RSS feed.
 
 == Description ==
 
-Helps prevent your RSS feed from being "scraped" (copied and reposted elsewhere), by adding a customizable message with a link to your original post.
-
-When the plugin is activated, a default message is shown. This message can then be configured in the options page. This is the default message:
+This plugin appends a customizable message with a link to every post in your RSS feed. This can help discourage robots from scraping your content (automatically copying and posting it elsewhere). This is the default message:
 
 `[postname] originally appeared on [sitename] on [postdate].`
-
-[postname], [sitename] and [postdate] are automatically replaced by the plugin.
-
-Also available: [tweetthis], which adds a tiny link to allow readers to tweet a link to your post in the format of `http://www.yoursite.com/?p=[postID]`.
 
 == Installation ==
 
