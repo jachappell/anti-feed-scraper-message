@@ -20,11 +20,11 @@ function insertFeedMessage($output) {
 	* Show feed message if feed
 	*/
 	if ( is_feed() ) {
-	
+
 		$message = get_option('afs_message');
 		
 		// postname
-		$message = str_replace("[postname]", '<a href="'.get_permalink().'" rel="bookmark">'.get_the_title().'</a>', $message);
+		$message = str_replace("[postname]", '<a href="'.get_permalink().'">'.get_the_title().'</a>', $message);
 		
 		// sitename
 		$message = str_replace("[sitename]", '<a href="'.get_bloginfo('home').'">'.get_bloginfo('name').'</a>', $message);
@@ -36,23 +36,17 @@ function insertFeedMessage($output) {
 		$tweetthis = '<a href="http://twitter.com/home/?status=' . get_the_title() . ': '. get_bloginfo('url') . '/?p=' . get_the_ID() . '">Tweet This</a>';
 		$message = str_replace("[tweetthis]", $tweetthis, $message);
 
+		$output = $output.$message;
 	}
-	
 
 	/**
 	* Output
 	*/
-	return $output . wpautop($message);
-
-
+	return $output;
 }
 
 // Register functions
-add_filter('the_content_feed', 'insertFeedMessage');
-
-
-
-
+add_filter('get_the_excerpt', 'insertFeedMessage');
 
 
 /*****************************
