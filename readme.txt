@@ -2,7 +2,7 @@
 Contributors: Joen
 Tags: rss, xml, feed, atom, rss2, scrape, anti, prevention, spam
 Requires at least: 2.6
-Tested up to: 4.1.2
+Tested up to: 4.2.1
 Stable tag: trunk
 
 Discourage robots from scraping your RSS feed.
